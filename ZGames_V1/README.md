@@ -4,8 +4,8 @@
 
 | Prénom Nom | Rôle principal |
 |---|---|
-| _Prénom Nom (membre A)_ | Architecture, intégration de Phaser, jeux d'arcade et d'action, déploiement |
-| _Prénom Nom (membre B)_ | Interface et catalogue, jeux de réflexion et de stratégie, responsive et tests |
+| Olivier Bouhours (membre A)_ | Architecture, intégration de Phaser, jeux d'arcade et d'action, déploiement |
+| Matteo Giuffre (membre B)_ | Interface et catalogue, jeux de réflexion et de stratégie, responsive et tests |
 
 ## L'idée du projet
 
