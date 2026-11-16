@@ -7,8 +7,6 @@
 | _Prénom Nom (membre A)_ | Architecture, intégration de Phaser, jeux d'arcade et d'action, déploiement |
 | _Prénom Nom (membre B)_ | Interface et catalogue, jeux de réflexion et de stratégie, responsive et tests |
 
-L'énoncé complet au format Word se trouve dans [docs/ZGames-Enonce.docx](docs/ZGames-Enonce.docx).
-
 ## L'idée du projet
 
 **ZGames** est une plateforme Web interactive qui regroupe plusieurs mini-jeux accessibles directement depuis un navigateur. Le site permet aux utilisateurs de découvrir différents types de jeux (**arcade**, **réflexion** et **stratégie**) à travers une interface intuitive et organisée. Chaque jeu est présenté dans un catalogue, avec recherche et filtres par catégorie, qui permet de choisir facilement celui auquel on veut jouer. L'objectif est de proposer une plateforme conviviale, offrant une expérience de jeu simple et accessible (sans installation ni compte), avec une variété de divertissements au sein d'un même environnement numérique.
