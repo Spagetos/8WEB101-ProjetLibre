@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jouer — ZGames</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav">
+      <a href="index.html" class="logo">Z<span>Games</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html#catalogue">Catalogue</a></li>
+        <li><a href="index.html#a-propos">À propos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container game-layout">
+    <section class="game-main">
+      <div class="game-head">
+        <a href="index.html#catalogue" class="back">← Catalogue</a>
+        <h1 id="game-title">Chargement…</h1>
+        <span id="game-tag" class="tag"></span>
+      </div>
+
+      <div class="hud">
+        <div class="hud-box"><span id="hud-score-label">Score</span><strong id="hud-score">0</strong></div>
+        <div class="hud-box"><span id="hud-best-label">Record</span><strong id="hud-best">—</strong></div>
+        <button id="restart-btn" class="btn" type="button">↻ Recommencer</button>
+      </div>
+
+      <div id="game-container" class="game-container"></div>
+      <div id="game-error" class="error" hidden></div>
+    </section>
+
+    <aside class="game-side">
+      <div class="side-card">
+        <h2>Comment jouer</h2>
+        <p id="game-desc"></p>
+        <h3>Commandes</h3>
+        <ul id="game-controls" class="controls"></ul>
+      </div>
+      <div class="side-card">
+        <h2>Autres jeux</h2>
+        <ul id="other-games" class="other-games"></ul>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© <span id="year"></span> ZGames — Projet 8WEB101</span>
+      <span>Propulsé par <a href="https://phaser.io/" target="_blank" rel="noopener">Phaser</a></span>
+    </div>
+  </footer>
+
+  <script src="lib/phaser.min.js"></script>
+  <script src="js/catalogue.js"></script>
+  <script src="js/zg.js"></script>
+  <script src="js/game-page.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZGames — Mini-jeux en ligne</title>
+  <meta name="description" content="ZGames : une plateforme de mini-jeux d'arcade, de réflexion et de stratégie, jouables directement dans le navigateur.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav">
+      <a href="index.html" class="logo">Z<span>Games</span></a>
+      <ul class="nav-links">
+        <li><a href="#catalogue">Catalogue</a></li>
+        <li><a href="#a-propos">À propos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <p class="hero-label">Projet 8WEB101 — plateforme de mini-jeux</p>
+      <h1>Des mini-jeux jouables<br>directement <em>dans le navigateur</em>.</h1>
+      <p>Arcade, réflexion ou stratégie : choisissez un jeu dans le catalogue et jouez instantanément depuis votre navigateur. Vos records sont sauvegardés automatiquement.</p>
+      <div class="hero-actions">
+        <a href="#catalogue" class="btn">Voir le catalogue</a>
+        <a href="#" id="random-game" class="btn btn-ghost">Jeu au hasard</a>
+      </div>
+      <ul class="stats">
+        <li class="stat"><strong id="stat-games">0</strong> jeux</li>
+        <li class="stat"><strong id="stat-categories">0</strong> catégories</li>
+        <li class="stat">gratuit, sans compte</li>
+      </ul>
+    </section>
+
+    <section id="catalogue" class="catalogue container">
+      <div class="section-head">
+        <h2>Catalogue</h2>
+        <div class="toolbar">
+          <input type="search" id="search" class="search" placeholder="Rechercher un jeu…" aria-label="Rechercher un jeu">
+          <div class="chips" id="filters" role="group" aria-label="Filtrer par catégorie"></div>
+        </div>
+      </div>
+      <div id="games-grid" class="games-grid"></div>
+      <p id="empty" class="empty" hidden>Aucun jeu ne correspond à votre recherche.</p>
+    </section>
+
+    <section id="a-propos" class="about container">
+      <h2>À propos de ZGames</h2>
+      <div class="about-grid">
+        <div class="feature">
+          <h3>Arcade</h3>
+          <p>Des réflexes et de la vitesse : Snake et Casse-briques, avec une difficulté qui augmente au fil de la partie.</p>
+        </div>
+        <div class="feature">
+          <h3>Réflexion</h3>
+          <p>Memory et 2048 font travailler la mémoire et la logique, à votre rythme.</p>
+        </div>
+        <div class="feature">
+          <h3>Stratégie</h3>
+          <p>Morpion et Puissance 4 contre une IA (minimax) avec plusieurs niveaux de difficulté.</p>
+        </div>
+        <div class="feature">
+          <h3>Action</h3>
+          <p>Z-City : une ville ouverte vue du dessus, des voitures à voler, des livraisons et la police à vos trousses. Z-Craft : un monde vivant en 2D à creuser et à construire, rongé par la corruption, avec boss et zombies.</p>
+        </div>
+        <div class="feature">
+          <h3>Technique</h3>
+          <p>HTML, CSS et JavaScript, avec le moteur de jeu <a href="https://phaser.io/" target="_blank" rel="noopener">Phaser</a>. Les scores sont stockés localement dans le navigateur.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© <span id="year"></span> ZGames — Projet 8WEB101</span>
+      <span>Propulsé par <a href="https://phaser.io/" target="_blank" rel="noopener">Phaser</a></span>
+    </div>
+  </footer>
+
+  <script src="js/catalogue.js"></script>
+  <script src="js/zg.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
